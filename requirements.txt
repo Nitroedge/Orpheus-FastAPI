@@ -18,11 +18,11 @@ snac==1.2.1       # Required for audio generation from tokens
 # System Utilities
 psutil==5.9.0
 
-# PyTorch - Install separately with CUDA support:
-# On Windows/Linux: 
-#   pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
-# On macOS:
-#   pip3 install torch torchvision torchaudio
+# PyTorch - Nightly build with CUDA 12.8 support
+--find-links https://download.pytorch.org/whl/nightly/cu128
+torch
+torchvision
+torchaudio
 
 # Optional Dependencies
 # For MP3 conversion (not currently implemented)
